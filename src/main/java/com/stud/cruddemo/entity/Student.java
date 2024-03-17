@@ -9,7 +9,7 @@ public class Student
 
 {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column (name="first_name")
     private String firstName ;
@@ -20,6 +20,8 @@ public class Student
     @Column (name="email")
     private String email ;
 
+    public Student() {
+    }
 
     public Student(String firstName, String lastName, String email)
     {
